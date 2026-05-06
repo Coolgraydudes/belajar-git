@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Code Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 640px;
+            margin: 40px auto;
+            padding: 0 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        button {
+            padding: 10px 18px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a simple HTML page with a little JavaScript interaction.</p>
+    <button id="helloButton">Click me</button>
+    <p id="message"></p>
+
+    <script>
+        const button = document.getElementById('helloButton');
+        const message = document.getElementById('message');
+
+        button.addEventListener('click', () => {
+            message.textContent = 'You clicked the button! 🎉';
+        });
+    </script>
+</body>
+</html>
